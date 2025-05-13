@@ -39,7 +39,12 @@ const Navbar = () => {
             Chapter 2
           </Link>
           <Link to="/chapter3" className="text-gray-700 hover:text-primary font-medium">Chapter 3</Link>
-          <Link to="/chapter4" className="text-gray-700 hover:text-primary font-medium">Chapter 4</Link>
+          <Link 
+            to="/chapter4" 
+            className={`font-medium ${isActive('/chapter4') ? 'text-primary' : 'text-gray-700 hover:text-primary'}`}
+          >
+            Chapter 4
+          </Link>
           <Link to="/chapter5" className="text-gray-700 hover:text-primary font-medium">Chapter 5</Link>
           <Button variant="outline" className="ml-4">Resources</Button>
         </div>
@@ -92,7 +97,7 @@ const Navbar = () => {
             <Link 
               to="/chapter4" 
               onClick={() => setIsMenuOpen(false)}
-              className="text-gray-700 font-medium py-2"
+              className={`font-medium py-2 ${isActive('/chapter4') ? 'text-primary' : 'text-gray-700'}`}
             >
               Chapter 4
             </Link>

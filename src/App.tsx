@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Chapter1 from "./pages/Chapter1";
 import Chapter2 from "./pages/Chapter2";
+import Chapter4 from "./pages/Chapter4";
 import NotFound from "./pages/NotFound";
 
 // Create a placeholder for future chapters
@@ -39,7 +40,7 @@ const App = () => (
           <Route path="/chapter1" element={<Chapter1 />} />
           <Route path="/chapter2" element={<Chapter2 />} />
           <Route path="/chapter3" element={<PlaceholderChapter number={3} />} />
-          <Route path="/chapter4" element={<PlaceholderChapter number={4} />} />
+          <Route path="/chapter4" element={<Chapter4 />} />
           <Route path="/chapter5" element={<PlaceholderChapter number={5} />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
