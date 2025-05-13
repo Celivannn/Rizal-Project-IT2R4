@@ -1,6 +1,9 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
@@ -13,17 +16,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 220 82% 27%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 0 75% 40%;
+    --secondary-foreground: 210 40% 98%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 220 82% 95%;
+    --accent-foreground: 220 82% 27%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -35,19 +38,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -97,5 +93,51 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .hero-section {
+    background-image: linear-gradient(to right, rgba(0, 28, 85, 0.8), rgba(186, 24, 24, 0.7)), url('/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .chapter-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .chapter-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .lesson-content p {
+    @apply my-4;
+  }
+
+  .lesson-content h2 {
+    @apply text-2xl font-semibold mt-8 mb-4;
+  }
+
+  .lesson-content h3 {
+    @apply text-xl font-semibold mt-6 mb-3;
+  }
+
+  .lesson-content ul, .lesson-content ol {
+    @apply my-4 ml-6;
+  }
+
+  .lesson-content ul {
+    @apply list-disc;
+  }
+
+  .lesson-content ol {
+    @apply list-decimal;
   }
 }
