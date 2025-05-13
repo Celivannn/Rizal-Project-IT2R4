@@ -344,18 +344,64 @@ const Chapter4 = () => {
                 </div>
                 
                 <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 mb-6">
-                  <h4 className="text-xl font-semibold mb-4">Key Characters in El Filibusterismo</h4>
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li><strong>Simoun:</strong> The disguised Crisostomo Ibarra, now a wealthy jeweler planning revolution</li>
-                    <li><strong>Basilio:</strong> The young boy from Noli, now a medical student</li>
-                    <li><strong>Isagani:</strong> A idealistic law student and poet</li>
-                    <li><strong>Padre Florentino:</strong> A Filipino priest who represents the moral conscience of the novel</li>
-                    <li><strong>Paulita Gomez:</strong> Isagani's fiancée who later marries Juanito Pelaez</li>
-                    <li><strong>Juanito Pelaez:</strong> A Spanish mestizo student who represents the opportunistic Filipinos</li>
-                  </ul>
+                  <h4 className="text-xl font-semibold mb-4">About El Filibusterismo</h4>
+                  <p className="mb-4">Rizal began writing El Filibusterismo in October 1887 in Calamba, Laguna, and completed it three years later on March 29, 1891, in Biarritz. The novel was published on September 18, 1891, in Ghent, Belgium, with the financial assistance of his friend Valentin Ventura when Rizal ran out of funds to complete its printing.</p>
+                  <p className="mb-4">The title "El Filibusterismo" has undergone multiple changes in meaning. According to Blumentritt, "filibusterismo" refers to the concept of the colony separating from the mother country, and "filibusteros" are individuals who desire to achieve this idea.</p>
+                  <p className="mb-4">Unlike the ornate cover of Noli Me Tangere, El Filibusterismo's cover is notably plain. This simplicity is symbolic in itself, conveying a fresh start for the Philippines and Filipinos without traces of symbols from the events in Noli Me Tangere. It signifies the beginning of a new chapter in the country's history, free from the past and ready to move toward a brighter future.</p>
+                  <p>The novel was dedicated to the three martyred priests: Mariano Gomez, José Burgos, and Jacinto Zamora, who were executed in 1872 after being falsely accused of treason.</p>
                 </div>
                 
-                <p className="mb-4">Unlike Noli Me Tangere which ends with a glimmer of hope, El Filibusterismo concludes with a more pessimistic tone. Simoun's revolution fails, and he commits suicide by poison. Before dying, he confesses to Padre Florentino, who delivers the novel's final message about the need for sacrifice, education, and virtuous conduct as prerequisites for freedom.</p>
+                <h3 className="text-2xl font-semibold mb-4">Synopsis of El Filibusterismo</h3>
+                
+                <div className="bg-white p-6 rounded-lg border border-primary mb-6">
+                  <h4 className="text-xl font-semibold mb-4">Chapter 1: On the Upper Deck</h4>
+                  <p>The novel begins aboard the steamer Tabo, traveling up the Pasig River to Laguna de Bay. Among the passengers is a mysterious jeweler named Simoun, who is actually Crisostomo Ibarra in disguise, returned after thirteen years. Also aboard are other characters including Isagani (a young idealistic student), Basilio (now a medical student), and several Spanish officials. Simoun has become an influential figure, a friend and adviser to the Captain-General, using this position to corrupt the government system and sow dissension among the people, all in preparation for a planned revolution.</p>
+                </div>
+                
+                <div className="bg-white p-6 rounded-lg border border-primary mb-6">
+                  <h4 className="text-xl font-semibold mb-4">Chapter 2: At the Governor's</h4>
+                  <p>Simoun visits the governor general at his residence and provides jewelry for sale. He manipulates events and advises the Spanish official, all while secretly planning to use his influence for his revolutionary agenda. His wealth and mysterious past have made him a figure of both respect and fear.</p>
+                </div>
+                
+                <div className="bg-white p-6 rounded-lg border border-primary mb-6">
+                  <h4 className="text-xl font-semibold mb-4">Chapter 3: The Legend of Lake Bai</h4>
+                  <p>During a reception, the guests discuss various legends, including the origins of the lake that forms the backdrop of many scenes in the novel. The chapter highlights Filipino mythology and introduces social commentary through the conversations of the characters.</p>
+                </div>
+                
+                <div className="bg-white p-6 rounded-lg border border-primary mb-6">
+                  <h4 className="text-xl font-semibold mb-4">Chapter 4: Christmas Eve</h4>
+                  <p>Basilio, now a medical student, returns to the forest where years ago his mother Sisa died and where Elias helped him bury her. He visits the grave and reminisces. Suddenly, he encounters a badly wounded man who turns out to be Simoun. Learning that Basilio is the son of Sisa, Simoun reveals his true identity as Ibarra and describes his return and plans for revolution.</p>
+                </div>
+                
+                <div className="bg-white p-6 rounded-lg border border-primary mb-6">
+                  <h4 className="text-xl font-semibold mb-4">Chapter 5: The Academic Year Opens</h4>
+                  <p>The chapter focuses on the university students, particularly Isagani, Basilio, and their companions who dream of establishing an academy to teach Spanish to Filipinos. They face opposition from conservatives who fear that educating the natives will lead to rebellion. The students' idealism and the opposition they face form a central conflict.</p>
+                </div>
+                
+                <div className="bg-white p-6 rounded-lg border border-primary mb-6">
+                  <h4 className="text-xl font-semibold mb-4">Chapter 6: Simoun</h4>
+                  <p>Simoun meets with Basilio again, attempting to recruit him to his revolutionary cause by exploiting his resentment over his mother's fate and the injustices he has experienced. Simoun elaborates on his grand plan to trigger a revolution that will overthrow the Spanish regime.</p>
+                </div>
+                
+                <div className="bg-white p-6 rounded-lg border border-primary mb-6">
+                  <h4 className="text-xl font-semibold mb-4">Chapter 7-13: The Student Movement</h4>
+                  <p>These chapters detail the students' efforts to establish a Spanish academy against significant opposition from the friars and colonial officials. The narrative introduces several student characters including Makaraig, Pelaez, and Sandoval, each representing different perspectives and social classes. Their interactions with the authorities reveal the complex social dynamics of colonial Manila.</p>
+                </div>
+                
+                <div className="bg-white p-6 rounded-lg border border-primary mb-6">
+                  <h4 className="text-xl font-semibold mb-4">Chapter 14-20: Plots and Counterplots</h4>
+                  <p>As the narrative progresses, Simoun's machinations become more elaborate. He manipulates various factions, stirring up conflicts between the civil government and the religious orders. Meanwhile, the love story between Isagani and Paulita Gomez develops, complicated by the competition from Juanito Pelaez. These chapters also explore the corrupt judicial system through the character of Don Custodio and the oppressive education system that stifles Filipino students.</p>
+                </div>
+                
+                <div className="bg-white p-6 rounded-lg border border-primary mb-6">
+                  <h4 className="text-xl font-semibold mb-4">Chapter 21-29: The Failed Revolution</h4>
+                  <p>Simoun's plans for revolution take concrete form as he organizes a conspiracy involving explosives disguised as a lamp, which will be detonated during a wedding celebration attended by Manila's elite. Basilio, initially recruited by Simoun, is arrested due to his association with the student movement, preventing him from stopping the plot. Isagani, learning of the planned bombing at the last moment, throws the lamp into the river, thwarting Simoun's plan.</p>
+                </div>
+                
+                <div className="bg-white p-6 rounded-lg border border-primary mb-6">
+                  <h4 className="text-xl font-semibold mb-4">Chapter 30-39: Aftermath and Redemption</h4>
+                  <p>With his revolutionary plot in shambles, a wounded Simoun flees to the house of Padre Florentino, a Filipino priest. There, as he lies dying from poison he has taken, Simoun confesses his true identity and the motivation behind his vengeful actions. Padre Florentino provides the novel's moral center, delivering a powerful speech about the futility of violence and revenge, and the need for education, hard work, and clear vision to achieve true freedom. The novel ends with Padre Florentino throwing Simoun's treasure chest of jewelry into the sea, symbolically rejecting ill-gotten wealth as the foundation for a new society.</p>
+                </div>
                 
                 <h3 className="text-2xl font-semibold mb-4">Rizal's Arrest and Trial</h3>
                 <p className="mb-4">In 1892, after returning to the Philippines from Hong Kong, Rizal was arrested and exiled to Dapitan in Mindanao. Four years later, in 1896, while the Philippine Revolution was beginning, Rizal requested to serve as a doctor for the Spanish army in Cuba. While en route to Spain, he was arrested and brought back to Manila.</p>
@@ -385,6 +431,8 @@ const Chapter4 = () => {
                   <li><strong>Dedication:</strong> Rizal dedicated the novel to the memory of the three martyred priests: Gomez, Burgos, and Zamora.</li>
                   <li><strong>Real-Life Inspiration:</strong> Many elements of the novel were inspired by real events and people that Rizal encountered in the Philippines and Europe.</li>
                   <li><strong>Trial:</strong> Rizal's trial was largely a formality, with the Spanish authorities determined to make an example of him to quell the growing revolutionary sentiment.</li>
+                  <li><strong>Main Characters:</strong> Simoun (Ibarra in disguise), Basilio, Isagani, Padre Florentino, and various students represent different approaches to social change.</li>
+                  <li><strong>Central Message:</strong> The novel questions whether violent revolution is the appropriate means to achieve freedom, ultimately suggesting that education, virtue, and selfless sacrifice are necessary foundations for national liberation.</li>
                 </ul>
               </div>
             }
@@ -398,6 +446,8 @@ const Chapter4 = () => {
                   <li>They have influenced generations of Filipino writers, intellectuals, and political leaders.</li>
                   <li>They serve as a reminder of the struggles for independence and the importance of national identity.</li>
                   <li>They continue to be relevant in discussions about social justice, governance, and Philippine-foreign relations.</li>
+                  <li>The contrast between Noli Me Tangere and El Filibusterismo offers an ongoing debate about reform versus revolution that remains relevant in political discourse.</li>
+                  <li>El Filibusterismo in particular poses important questions about the ethics of violent resistance and the responsibilities of the educated class.</li>
                 </ul>
               </div>
             }
