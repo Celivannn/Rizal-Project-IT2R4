@@ -1,11 +1,14 @@
 
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Menu, X, Book } from 'lucide-react';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <nav className="bg-white border-b border-gray-200 py-4 px-4 md:px-6 sticky top-0 z-50">
@@ -17,9 +20,25 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          <Link to="/" className="text-gray-700 hover:text-primary font-medium">Home</Link>
-          <Link to="/chapter1" className="text-gray-700 hover:text-primary font-medium">Chapter 1</Link>
-          <Link to="/chapter2" className="text-gray-700 hover:text-primary font-medium">Chapter 2</Link>
+          <Link 
+            to="/" 
+            className={`font-medium ${isActive('/') ? 'text-primary' : 'text-gray-700 hover:text-primary'}`}
+          >
+            Home
+          </Link>
+          <Link 
+            to="/chapter1" 
+            className={`font-medium ${isActive('/chapter1') ? 'text-primary' : 'text-gray-700 hover:text-primary'}`}
+          >
+            Chapter 1
+          </Link>
+          <Link 
+            to="/chapter2" 
+            className={`font-medium ${isActive('/chapter2') ? 'text-primary' : 'text-gray-700 hover:text-primary'}`}
+          >
+            Chapter 2
+          </Link>
+          <Link to="/chapter3" className="text-gray-700 hover:text-primary font-medium">Chapter 3</Link>
           <Link to="/chapter4" className="text-gray-700 hover:text-primary font-medium">Chapter 4</Link>
           <Link to="/chapter5" className="text-gray-700 hover:text-primary font-medium">Chapter 5</Link>
           <Button variant="outline" className="ml-4">Resources</Button>
@@ -45,23 +64,30 @@ const Navbar = () => {
             <Link 
               to="/" 
               onClick={() => setIsMenuOpen(false)}
-              className="text-gray-700 font-medium py-2"
+              className={`font-medium py-2 ${isActive('/') ? 'text-primary' : 'text-gray-700'}`}
             >
               Home
             </Link>
             <Link 
               to="/chapter1" 
               onClick={() => setIsMenuOpen(false)}
-              className="text-gray-700 font-medium py-2"
+              className={`font-medium py-2 ${isActive('/chapter1') ? 'text-primary' : 'text-gray-700'}`}
             >
               Chapter 1
             </Link>
             <Link 
               to="/chapter2" 
               onClick={() => setIsMenuOpen(false)}
-              className="text-gray-700 font-medium py-2"
+              className={`font-medium py-2 ${isActive('/chapter2') ? 'text-primary' : 'text-gray-700'}`}
             >
               Chapter 2
+            </Link>
+            <Link 
+              to="/chapter3" 
+              onClick={() => setIsMenuOpen(false)}
+              className="text-gray-700 font-medium py-2"
+            >
+              Chapter 3
             </Link>
             <Link 
               to="/chapter4" 

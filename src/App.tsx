@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Chapter1 from "./pages/Chapter1";
+import Chapter2 from "./pages/Chapter2";
 import NotFound from "./pages/NotFound";
 
 // Create a placeholder for future chapters
@@ -36,7 +37,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/chapter1" element={<Chapter1 />} />
-          <Route path="/chapter2" element={<PlaceholderChapter number={2} />} />
+          <Route path="/chapter2" element={<Chapter2 />} />
           <Route path="/chapter3" element={<PlaceholderChapter number={3} />} />
           <Route path="/chapter4" element={<PlaceholderChapter number={4} />} />
           <Route path="/chapter5" element={<PlaceholderChapter number={5} />} />
